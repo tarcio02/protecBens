@@ -3,10 +3,13 @@ import MenuNav from "../MenuNav/Index";
 import logo from "../../imagens/logo.png"
 
 function Header(){
+
     return(
         <StyleHeader>
             <img src={logo} alt="logo protec-bens" />
-            <MenuNav />
+            <div className="container">
+                <MenuNav />
+            </div>
         </StyleHeader>
     )
 }

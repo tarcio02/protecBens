@@ -10,18 +10,18 @@ export const GlobalStyles = createGlobalStyle`
 
     body{
         padding: 32px 10%;
-        background: linear-gradient(to bottom right,#ffff, rgba(224, 181, 20, 0.9));
-        position: relative;
+        background: linear-gradient(to bottom right,#ffff, rgba(224, 181, 20, 1));
+        /* position: relative; */
     }
 
-    body::after {
+    /* body::after {
         content: "";
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.2); /* Ajuste a opacidade aqui */
-        z-index: -1; /* Mantém atrás do conteúdo */
-}
+        background: rgba(0, 0, 0, 0.2);
+        z-index: -1; 
+    } */
 `

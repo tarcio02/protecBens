@@ -7,7 +7,7 @@ export const StyleMenuNav = styled.ul`
     list-style: none;
     gap: 16px;
 
-    li{
+    Link{
         padding: 6px;
         border-radius: 16px;
         font-weight: 400;

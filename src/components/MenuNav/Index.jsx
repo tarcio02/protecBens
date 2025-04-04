@@ -1,12 +1,13 @@
 import { StyleMenuNav } from "./Styles";
+import { Link } from "react-router-dom";
 
 function MenuNav(){
     return(
         <StyleMenuNav>
-            <li className="isActive">MAPA</li>
-            <li>RASTREAMENTO</li>
-            <li>PAGAMENTOS</li>
-            <li>ENTRE OU CADASTRE-SE</li>
+            <Link to="/">MAPA</Link>
+            <Link to="/pacote">PACOTES</Link>
+            <Link to="/rastreio">RASTREIOS</Link>
+            <Link to="cadastro">ACESSO</Link>
         </StyleMenuNav>
     )
 }
