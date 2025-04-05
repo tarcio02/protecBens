@@ -9,6 +9,7 @@ export const StyleHeader = styled.div`
     padding: 16px;
     position: relative;
     background: rgba(0, 0, 0, 0.3);
+    gap: 8px;
 
     .container{
         overflow-x: auto;

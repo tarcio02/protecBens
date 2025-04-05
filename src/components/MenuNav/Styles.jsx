@@ -6,14 +6,18 @@ export const StyleMenuNav = styled.ul`
     align-items: center;
     list-style: none;
     gap: 16px;
+    justify-content: center;
 
-    Link{
+    .desativo{
         padding: 6px;
         border-radius: 16px;
         font-weight: 400;
         font-size: 16px;
+        color: black;
+        text-decoration: none;
+        font-weight: 200;
     }
-    .isActive{
+    .ativo{
         background-color: black;
         color: #ffff;
     }

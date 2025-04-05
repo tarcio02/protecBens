@@ -34,12 +34,13 @@ export const StyleCadastro = styled.div`
             flex-direction: column;
             gap: 16px;
             input{
-                width: 340px;
+                width: 300px;
             }
         }
 
         .data{
-            width: 100%;
+            width: 300px;
+
             .container{
                 display: flex;
                 justify-content: space-between;
@@ -51,15 +52,22 @@ export const StyleCadastro = styled.div`
         }
 
         button{
-            width: 340px;
+            width: 300px;
             background-color: black;
             color: white;
             font-weight: bold;
             letter-spacing: 0.5px;
         }
-        span{
+        .span{
             text-decoration: underline;
             font-weight: bold;
+            color: black;
+        }
+    }
+
+    @media (max-width: 786px){
+        .strings input{
+            width: 300px;
         }
     }
 `

@@ -2,6 +2,7 @@ import Titulo from "../../components/Titulo/Index";
 import { StyleCadastro } from "./Styles";
 import usuario from "../../imagens/usuario.svg"
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Cadastro() {
     const titulo = "Cadastre-se" 
@@ -44,7 +45,7 @@ function Cadastro() {
                     </div>
                 </div>
                 <button>Me cadastrar</button>
-                <span>Já tenho uma conta, quero entrar!</span>
+                <Link to={"/login"} className="span">Já tenho uma conta, quero entrar!</Link>
             </div>
         </StyleCadastro>
     )

@@ -5,23 +5,34 @@ export const StyleMapa = styled.div`
     flex-direction: column;
     align-items: center;
     margin: 48px;
-
-    .titulo{
-        text-align: center;
-
-        i{
-            font-size: 60px;
-        }
-    }
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    padding: 40px 16px;
+    margin: 40px 0;
+    gap: 16px;
 
     img{
         width: 640px;
         border-radius: 16px;
+        margin-bottom: 24px;
+    }
+
+    .cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    
     }
 
 
-    @media (min-width: 768px){
-        flex-direction: column;
-        gap: 16px;
+    @media (max-width: 768px){
+        img{
+            width: 300px;
+        }
+
+        .cards{
+            flex-direction: column;
+        }
 }
 `

@@ -7,6 +7,7 @@ import Pacotes from "./routes/Rastreamento/Index"
 import Pagamentos from "./routes/Pagamentos/Index"
 import Cadastro from "./routes/Cadastro/Index"
 import Rastreio from "./routes/Rastreio/Index"
+import Login from "./routes/Login/Index";
 
 function App() {
 
@@ -19,7 +20,8 @@ function App() {
         <Route path="/pacote" element={<Pacotes/>}/>
         <Route path="/rastreio" element={<Rastreio/>}/>
         <Route path="/cadastro" element={<Cadastro/>}/>
-        <Route path="/pacote/pagamentos" element={<Pagamentos/>}/>
+        <Route path="/pagamentos" element={<Pagamentos/>}/>
+        <Route path="/login" element={<Login />}/>
       </Routes>
       <Footer />
     </Router>
