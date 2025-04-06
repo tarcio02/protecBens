@@ -1,6 +1,6 @@
 import { GlobalStyles } from "./GlobalStyles"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from "./components/Header/Index"
+// import Header from "./components/Header/Index"
 import Footer from "./components/Footer/Index"
 import Mapa from "./routes/Mapa/Index"
 import Pacotes from "./routes/Rastreamento/Index"
