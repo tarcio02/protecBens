@@ -22,7 +22,9 @@ export const StyleRastreio = styled.div`
         width: 240px;
     }
 
-    button{
+    .button{
+        display: flex;
+        justify-content: center;
         height: 40px;
         width: 320px;
         font-weight: bold;
@@ -30,6 +32,9 @@ export const StyleRastreio = styled.div`
         color: white;
         background-color: black;
         border-radius: 8px;
+        text-align: center;
+        align-items: center;
+        text-decoration: none;
 
         i{
             margin-left: 4px;

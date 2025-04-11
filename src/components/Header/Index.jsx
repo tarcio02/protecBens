@@ -1,6 +1,7 @@
 import { StyleHeader } from "./Styles";
 import MenuNav from "../MenuNav/Index";
 import logo from "../../imagens/logo.png"
+import { NavLink } from "react-router-dom";
 
 function Header(){
 
@@ -10,6 +11,7 @@ function Header(){
             <div className="container">
                 <MenuNav />
             </div>
+            <NavLink  className={"button"} to="/login">Àrea do cliente</NavLink>
         </StyleHeader>
     )
 }

@@ -1,6 +1,7 @@
 import Titulo from "../../components/Titulo/Index";
 import { StyleRastreio } from "./Styles";
 import rastreio from "../../imagens/rastreio.svg"
+import { Link } from "react-router-dom";
 
 function Rastreio() {
     const dados = [
@@ -33,7 +34,7 @@ function Rastreio() {
                 </tbody>
             </table>
         </div>
-        <button>Solicitar novo rastreio<i class="fa-solid fa-magnifying-glass"></i></button>
+        <Link className="button" to={"/requisicao"}>Solicitar novo rastreio<i class="fa-solid fa-magnifying-glass"></i></Link>
         </StyleRastreio>
     )
 }

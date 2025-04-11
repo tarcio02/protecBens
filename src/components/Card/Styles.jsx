@@ -3,16 +3,15 @@ import styled from "styled-components";
 export const StyleCard = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 8px;
     padding: 16px;
     text-align: center;
     border: 1px solid black;
     border-radius: 16px;
     margin-top: 16px;
     width: 240px;
-    height: 246px;
+    height: 260px;
 
     i{
         font-size: 40px;
@@ -34,6 +33,7 @@ export const StyleCard = styled.div`
     }
 
     @media (max-width: 768px){
+        width: 180px;
         i{
             font: 32px;
         }

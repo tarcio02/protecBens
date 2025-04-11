@@ -1,12 +1,9 @@
 import styled from "styled-components";
 
 export const StyleMenuNav = styled.ul`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     list-style: none;
     gap: 16px;
-    justify-content: center;
+    margin-left: 32px;
 
     .desativo{
         padding: 6px;
@@ -16,6 +13,7 @@ export const StyleMenuNav = styled.ul`
         color: black;
         text-decoration: none;
         font-weight: 200;
+        display: block;
     }
     .ativo{
         background-color: black;
