@@ -24,9 +24,10 @@ function Pessoa() {
         <StylePessoa>
             <h3>Insira abaixo os dados da pessoa</h3>
             <div className="input">
-            <input value={nome} onChange={handleChange} placeholder="Insira o nome" type="text" />
+                <input value={nome} onChange={handleChange} placeholder="Insira o nome" type="text" />
                 <label htmlFor="imagemUpload" className="botao-upload">
-                    Escolher imagem
+                    <i class="fa-solid fa-folder"></i>
+                    {image ? "Escolher outra" : "Escolher imagem"}
                 </label>
                 <input id="imagemUpload" type="file" accept="image/*" onChange={handleImageChange}/>
             </div>
@@ -37,8 +38,8 @@ function Pessoa() {
                 {
                     nome ? <p>{nome}</p> : <p></p>
                 }
-
             </div>
+            <button>Rastrear</button>
         </StylePessoa>
     )
 }

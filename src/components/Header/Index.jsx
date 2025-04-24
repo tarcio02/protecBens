@@ -7,11 +7,13 @@ function Header(){
 
     return(
         <StyleHeader>
-            <img src={logo} alt="logo protec-bens" />
             <div className="container">
-                <MenuNav />
+                <img src={logo} alt="logo protec-bens" />
+                <div className="container">
+                    <MenuNav />
+                </div>
             </div>
-            <NavLink  className={"button"} to="/login">Àrea do cliente</NavLink>
+            <NavLink  className={"button"} to="/rastreio">Àrea do Investigador<i class="fa-solid fa-shoe-prints"></i></NavLink>
         </StyleHeader>
     )
 }

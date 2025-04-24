@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyleMenuNav = styled.ul`
+    display: flex;
     list-style: none;
     gap: 16px;
     margin-left: 32px;
@@ -21,9 +22,8 @@ export const StyleMenuNav = styled.ul`
     }
 
     //Regras de layout para desktop
-    @media (min-width: 768px){
-        display: flex;
-        flex-direction: row;
+    @media (min-width: 764px){
+        
     }
 `
 

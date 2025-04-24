@@ -7,11 +7,11 @@ export const StyleCard = styled.div`
     align-items: center;
     padding: 16px;
     text-align: center;
-    border: 1px solid black;
     border-radius: 16px;
     margin-top: 16px;
     width: 240px;
     height: 260px;
+    background-color: rgba(0, 0, 0, 0.3);
 
     i{
         font-size: 40px;
@@ -40,5 +40,9 @@ export const StyleCard = styled.div`
         h3{
             font-size: 16px;
         }
+    }
+
+    @media (max-width: 600px){
+        width: 240px;
     }
 `

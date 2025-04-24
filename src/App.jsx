@@ -9,6 +9,8 @@ import Cadastro from "./routes/Cadastro/Index"
 import Rastreio from "./routes/Rastreio/Index"
 import Login from "./routes/Login/Index";
 import Requisicao from "./routes/Requisicao/Index";
+import Servicos from "./routes/Servicos/Index";
+import Informacao from "./routes/Informacao/Index";
 
 function App() {
 
@@ -24,6 +26,8 @@ function App() {
         <Route path="/pagamentos" element={<Pagamentos/>}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/requisicao" element={<Requisicao />}/>
+        <Route path="/servicos" element={<Servicos />}/>
+        <Route path="/informacao" element={<Informacao />}/>
       </Routes>
       <Footer />
     </Router>

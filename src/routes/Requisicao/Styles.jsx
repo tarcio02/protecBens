@@ -8,7 +8,8 @@ export const StyleRequisicao = styled.div`
     gap: 16px;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 16px;
-    margin: 40px 0;
+    margin: 40px auto;
+    width: 80%;
     padding: 40px 0;
 
     .container{

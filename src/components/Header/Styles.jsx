@@ -7,14 +7,14 @@ export const StyleHeader = styled.div`
     padding:16px 32px;
 
     .container{
-        overflow-x: auto;
-        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
 
 .button{
     display: block;
     background-color: rgba(0, 0, 0, 0.3);
-    border: none;
     white-space: nowrap;
     padding: 12px;
     font-size: 20px;
@@ -29,9 +29,24 @@ export const StyleHeader = styled.div`
     }
 
 //Regras de layout para desktop
-@media (min-width: 768px){
-    /* flex-direction: column;
-    gap: 16px; */
-}
+    @media (max-width: 764px){
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        .container{
+            flex-direction: column;
+        }
+
+        .button{
+            white-space: normal;
+            text-align: center;
+            font-size: 16px;
+            padding:8px;
+            i{
+                font-size: 20px;
+                margin-left: 8px;
+            }
+        }
+    }
 `
 

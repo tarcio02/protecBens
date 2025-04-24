@@ -5,7 +5,7 @@ export const StyleFooter = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    border-radius: 16px;
+    text-align: center;
     padding: 16px;
     background: rgba(0, 0, 0, 0.2);
 

@@ -31,7 +31,6 @@ export const StylePessoa = styled.div`
 
     .input{
         display: flex;
-        flex-direction: column;
         justify-content: center;
         gap: 16px;
 
@@ -41,15 +40,43 @@ export const StylePessoa = styled.div`
 
         input, .botao-upload{
             height: 40px;
+            width: 160px;
             background-color: transparent;
             border: solid 1px black;
             border-radius: 8px;
             padding: 4px;
         }
 
+        input::placeholder{
+            color: black;
+        }
+
         .botao-upload{
             display: flex;
             align-items: center;
+        }
+        i{
+            font-size: 16px;
+            margin-right: 4px;
+        }
+    }
+    button{
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 0.5;
+        width: 300px;
+        height: 40px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    @media (max-width: 764px){
+        .input{
+            flex-direction: column;
+            input, .botao-upload{
+                width: 180px;
+            }
         }
     }
 `

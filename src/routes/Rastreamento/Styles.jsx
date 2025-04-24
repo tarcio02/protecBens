@@ -2,14 +2,38 @@ import styled from "styled-components";
 
 export const StyleRastreamento = styled.div`
     @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-8px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes pulseNeon {
     0% {
-        transform: translateY(0);
+        box-shadow:
+        0 0 5px #008000,
+        0 0 10px #008000,
+        0 0 10px #008000,
+        0 0 30px #008000;
     }
     50% {
-        transform: translateY(-8px);
+        box-shadow:
+        0 0 10px #00ff00,
+        0 0 20px #00ff00,
+        0 0 20px #00ff00,
+        0 0 50px #00ff00;
     }
     100% {
-        transform: translateY(0);
+        box-shadow:
+        0 0 5px #008000,
+        0 0 10px #008000,
+        0 0 20px #008000,
+        0 0 30px #008000;
     }
     }
 
@@ -17,7 +41,7 @@ export const StyleRastreamento = styled.div`
     flex-direction: column;
     justify-content: space-around;
     gap: 24px;
-    padding: 60px 0;
+    padding: 60px 40px;
 
     .cards{
         display: grid;
@@ -29,11 +53,12 @@ export const StyleRastreamento = styled.div`
             flex-direction: column;
             text-align: center;
             justify-content: center;
-            gap: 16px;
+            gap: 24px;
             width: 100%;
             height: 240px;
             border-radius: 16px;
             background: rgba(0, 0, 0, 0.3);
+            padding: 8px;
 
             i{
                 font-size: 48px;
@@ -49,10 +74,14 @@ export const StyleRastreamento = styled.div`
             margin: 0 auto;
             padding: 8px;
             border-radius: 16px;
-            text-decoration: none
-            
-            
-            ;
+
+            /* box-shadow:
+                0 0 5px #008000,
+                0 0 10px #008000,
+                0 0 10px #00ff00,
+                0 0 25px #00ff00; */
+
+                animation: pulseNeon 3s infinite;
         }
     }
 

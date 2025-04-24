@@ -1,16 +1,20 @@
-import { StyleCarro } from "./Styles";
+import { StyleCarro } from "./Style";
 
-function  Carro() {
+function Carro() {
     return(
         <StyleCarro>
-            <h3>Insira os dados do seu veículo abaixo</h3>
-            <input placeholder="Marca do veículo" type="text" />
-            <input placeholder="Modelo" type="text" />
-            <input placeholder="Placa" type="text" />
-            <input placeholder="Cor" type="text" />
-            <button>Enviar</button>
+            <div className="pl-ca">
+                <input placeholder="Placa" type="text" />
+                <input placeholder="Marca" type="text" />
+            </div>
+            <div className="mo-co">
+                <input placeholder="Modelo" type="text" />
+                <input placeholder="Cor" type="text" />
+            </div>
+            <button>Rastrear</button>
         </StyleCarro>
     )
+
 }
 
 export default Carro

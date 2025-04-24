@@ -21,8 +21,7 @@ export const StyleInicio = styled.div`
         align-items: center;
         justify-content: center;
         gap: 80px;
-        height: calc(100vh - 123px);
-    
+        height: calc(100vh - 200px);
 
         .imagem{
             width: 210px;
@@ -116,6 +115,16 @@ export const StyleInicio = styled.div`
 
         .social{
             justify-content: center;
+        }
+
+        .cardContainer{
+            height: auto;
+            margin-bottom: 5vh;
+            .cards{
+                flex-direction: column;
+                align-items: center;
+                gap: 5vh;
+            }
         }
     }
 `

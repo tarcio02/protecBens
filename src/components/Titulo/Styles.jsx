@@ -15,6 +15,9 @@ export const StyleTitulo = styled.div`
     }
 
     @media (max-width: 768px){
+        img{
+            width: 80px;
+        }
         h2{
             font-size: 16px;
         }

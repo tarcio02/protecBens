@@ -3,8 +3,7 @@ import Titulo from "../../components/Titulo/Index";
 import rastreio from "../../imagens/rastreio.svg"
 import { useState } from "react";
 import Pessoa from "../Pessoa/Index";
-import Carro from "../carro/Index";
-import { Link } from "react-router-dom";
+import Carro from "../Carro/Index";
 
 function Requisicao() {
     const titulo = "O que você deseja rastrear?"
@@ -16,7 +15,7 @@ function Requisicao() {
             'Pessoa', 'Carro'
         ];
 
-        function renderMensagem(obj) {
+        function render(obj) {
             if (obj === 'Pessoa') return <Pessoa />;
             if (obj === 'Carro') return <Carro />;
             return <div></div>;
@@ -33,7 +32,7 @@ function Requisicao() {
                     ))}
                 </select>
             </div>
-            {renderMensagem(objeto)}
+            {render(objeto)}
         </StyleRequisicao>
     )
 }
